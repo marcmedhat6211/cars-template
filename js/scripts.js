@@ -4,10 +4,6 @@
     /**SLIDER USING SWIPER**/
 	var cardSlider = new Swiper('.card-slider', {
         loop: true,
-        navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
-		},
 		slidesPerView: 1.85,
         spaceBetween: 30,
         centeredSlides: true,

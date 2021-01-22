@@ -47,6 +47,8 @@ body {
 .navbar-custom .dropdown-menu {
 	background-color: black;
 	width: 350px;
+	/* position: relative;
+	left: -200px; */
 }
 
 .navbar-custom .dropdown-item {
@@ -85,13 +87,14 @@ body {
 	}
 }
 
+/**ONLY ON MOBILE SCREENS**/
 @media only screen and (max-width: 500px) {
 	.mobilehidden {
 		  display: none;
 	}
 
 	.mobile-center {
-		clear:both;
+		clear: both;
 		min-width: 220px;
 		margin: auto;
 		bottom: 100px;
@@ -99,6 +102,16 @@ body {
 
 	.navbar-collapse {
     	height: 75vh;
+	}
+
+	.dismorebtn {
+		position: relative;
+		text-align: center;
+	}
+
+	.sameline {
+		position: relative;
+		text-align: center;
 	}
 }
 
@@ -199,19 +212,23 @@ body {
 	}
 }
 
+/**ONLY ON BIG SCREENS**/
 @media (min-width: 1200px) {
 	.navbar-custom {
 		padding-right: 5rem;
 		padding-left: 5rem;
 	}
+
+	.dismorebtn {
+		position: relative;
+		text-align: center;
+		bottom: 80px;
+	}
 }
 
-.dismorebtn {
-	width: 25%;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 40px;
+.btn {
+	width: 201px;
+	height: 41px;
 	background: none;
 	color: #fff;
 	font-family: Montserrat-Medium;
@@ -252,9 +269,18 @@ color: white;
 }
 
 /**PAGINATION**/
-#left{float:left;width:100px;}
-#right{float:right;width:100px;}
-#center{margin:0 auto;width:100px;}
+#left {
+	float:left;
+	width:100px;
+}
+#right {
+	float:right;
+	width:100px;
+}
+#center {
+	margin:0 auto;
+	width:100px;
+}
 
 .pagination {
 	float: right;
