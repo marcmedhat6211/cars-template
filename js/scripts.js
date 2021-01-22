@@ -1,5 +1,4 @@
 (function($) {
-    "use strict";
 
     /**SLIDER USING SWIPER**/
 	var cardSlider = new Swiper('.card-slider', {
@@ -24,3 +23,13 @@
     });
 
 })(jQuery);
+
+// window.onload = function() {
+//     if (window.innerWidth >= 754) {
+//         var cnt = $(".flex-right").contents();
+//         $(".flex-right").replaceWith(cnt);
+//     } else {
+//         document.getElementById("nav-links").className = "flex-right"
+//     }
+// }
+
