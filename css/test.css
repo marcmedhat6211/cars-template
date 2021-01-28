@@ -1,0 +1,393 @@
+body,
+html {
+	margin: 0;
+    height: 100%;
+}
+
+body {
+	background-color: black;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/**NAVIGATION BAR**/
+.navbar-custom {
+	padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+	background-color: black;
+	/* width: 899px; */
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+    width: 7.0625rem;
+	height: 2rem;
+}
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	color: #fff;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+.navbar-custom .nav-item .nav-link:hover {
+    color: #e40000;
+    border-bottom: 1px solid #e40000; 
+    display: inline-block;
+}
+
+/**DROPDOWN**/
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: inline-block;
+}
+
+.navbar-custom .dropdown-menu {
+	background-color: black;
+	position: relative;
+}
+
+.navbar-custom .dropdown-item {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-custom .dropdown-item:hover {
+	background: none;
+}
+ 
+.navbar-custom .dropdown-item:hover {
+	color: #e40000;
+}
+
+.drpdownimg {
+	width: 100%;
+	height: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 753px) {
+	.mobileshown { 
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.column {
+	  width: 100%;
+	}
+}
+
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block;
+	min-width: auto;
+	animation: fadeDropdown 0.2s;
+}
+
+/**NAVIGATION BAR FOR MOBILE**/
+/**SLIDER**/
+.slider {
+	padding-top: 7.375rem;
+	padding-bottom: 6.5rem;
+	background-color: black;
+}
+
+.slider .swiper-container {
+	position: static;
+	width: 100%;
+}
+
+.slider .swiper-button-prev:focus,
+.slider .swiper-button-next:focus {
+	outline: none;
+}
+
+.slider .card {
+	position: relative;
+	border: none;
+	background-color: transparent;
+}
+
+.slider .card-image {
+	width: 85%;
+	height: auto;
+	margin-right: auto;
+	margin-bottom: 0.25rem;
+	margin-left: auto;
+}
+
+.carname {
+	width: 65%;
+	height: auto;
+	margin-right: auto;
+	margin-bottom: 0.25rem;
+	margin-left: auto;
+}
+
+.redcar {
+	height: 400px;
+}
+
+.slider .swiper-button-prev {
+	left: 1rem;
+	width: 1.375rem;
+	background-size: 1.375rem 2.125rem;
+}
+
+.slider .swiper-button-next {
+	right: 1rem;
+	width: 1.375rem;
+	background-size: 1.375rem 2.125rem;
+}
+
+.dismorebtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+	width: 200px;
+	height: 41px;
+	background: none;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15.35px;
+	border: 0.2px solid grey;
+	border-radius: 100px;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+/**SOCIAL MEDIA ICONS**/
+.fa {
+	float: left;
+	font-size: 15px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+	opacity: 0.7;
+	color: white;
+	text-decoration: none;
+}
+
+.fa-facebook {
+	background: none;
+	color: white;
+}
+
+.fa-twitter {
+background: none;
+color: white;
+}
+
+.fa-instagram {
+	background: none;
+	color: white;
+}
+
+/**PAGINATION**/
+#left {
+	float:left;
+	width:100px;
+}
+#right {
+	float:right;
+	width:100px;
+}
+#center {
+	margin:0 auto;
+	width:100px;
+}
+
+.sameline {
+	display: flex;
+	justify-content: space-between;
+}
+
+.arrow {
+	width: 15%;
+}
+
+.pagination-link {
+	text-decoration: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: small;
+}
+
+.pagination-link:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/**BIG SCREENS**/
+@media (min-width: 754px) {
+	.navbar-custom {
+		padding-right: 5rem;
+		padding-left: 5rem;
+		width: 899px;
+	}
+	
+	.navbar-custom .navbar-nav {
+		position: relative;
+		left: 400px;
+	}
+
+	.navbar-custom .nav-item .nav-link {
+		font-size: 15px;
+	}
+
+    .dismore-btn {
+        position: relative;
+        bottom: 73.06px;
+    }
+
+    .btn {
+		display: inline-block;
+		width: 200px;
+	}
+    
+    .pagination {
+        float: right;
+        top: 118px;
+    }
+
+    .navbar-custom .dropdown-menu {
+        position: relative;
+        left: -150px;
+        width: 500px;
+        height: 120px;
+    }
+
+    /* .navbar-custom {
+        right: 153.3px;
+	} */
+
+	.flex-right {
+        background-color: black;
+		padding: 10px;
+		position: relative;
+		left: 350px;
+	}
+
+	.up {
+		position: relative;
+		bottom: 20px;
+	}
+}
+
+/**SMALL SCREENS**/
+@media only screen and (max-width: 753px) {
+	.mobilehidden {
+		  display: none;
+    }
+    
+    .center-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagination {
+        position: relative;
+        top: 30px;
+        left: 40px;
+	}
+
+    .btn {
+		width: 150px;
+		height: auto;
+		font-size: smaller;
+	}
+
+	.navbar-collapse {
+		height: 100vh;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .flex-left {
+        height: 115vh;
+        width: 100%;
+        margin: 0;
+        background-color: #e40000;
+        flex: 25%;
+    }
+
+    .flex-right {
+        background-color: black;
+        padding: 10px;
+        flex: 70%;
+	}
+
+	.social-media-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		position: relative;
+		top: 50px;
+	}
+
+	.navbar-custom .navbar-nav {
+		margin-bottom: 7rem;
+	}
+	  
+	.dropdown-content {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.navbar-custom .nav-item .nav-link {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight: 300;
+	}
+
+	.navbar-custom .dropdown-item {
+		color: #fff;
+		text-decoration: none;
+		font-size: 20px;
+	}
+
+    .arabic-btn {
+		position: relative;
+		top: 510px;
+		z-index: 1;
+		background: none;
+		color: #fff;
+		border: solid 1px #fff;
+	}
+	
+	.down {
+		position: relative;
+		top: 30px;
+	}
+}
